@@ -14,6 +14,8 @@ import java.io.IOException;
 public class UpdatePasswordServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        String text = "Ilyas From Almaty";
+
         String redirect = "/";
         Users currentUser = (Users) request.getSession().getAttribute("CURRENT_USER");
 
