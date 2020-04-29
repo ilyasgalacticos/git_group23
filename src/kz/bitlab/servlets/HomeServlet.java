@@ -18,10 +18,8 @@ public class HomeServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         ArrayList<Blogs> blogs = DBManager.getAllBlogs();
         request.setAttribute("blogs", blogs);
         request.getRequestDispatcher("/index.jsp").forward(request, response);
-
     }
 }

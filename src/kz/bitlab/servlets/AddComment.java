@@ -41,11 +41,6 @@ public class AddComment extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Users currentUser = (Users) request.getSession().getAttribute("CURRENT_USER");
-        if(currentUser!=null) {
-            request.getRequestDispatcher("/addblog.jsp").forward(request, response);
-        }else{
-            response.sendRedirect("/login");
-        }
+
     }
 }

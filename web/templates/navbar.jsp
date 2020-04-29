@@ -6,7 +6,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <%
-            Users currentUser = (Users) request.getSession().getAttribute("CURRENT_USER");
+            Users currentUser = (Users) request.getAttribute("currentUser");
             if(currentUser!=null){
         %>
             <ul class="navbar-nav mr-auto">

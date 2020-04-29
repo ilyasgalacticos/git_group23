@@ -39,7 +39,7 @@ public class AddBlog extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Users currentUser = (Users) request.getSession().getAttribute("CURRENT_USER");
+        Users currentUser = (Users) request.getAttribute("currentUser");
         if(currentUser!=null) {
             request.getRequestDispatcher("/addblog.jsp").forward(request, response);
         }else{

@@ -6,6 +6,7 @@
     <%@include file="templates/head.jsp"%>
     <script src="/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
     <script>tinymce.init({selector:'textarea', menubar: "insert"});</script>
+
   </head>
   <body>
 

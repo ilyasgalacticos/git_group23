@@ -48,7 +48,7 @@ public class EditBlog extends HttpServlet {
     }
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        Users currentUser = (Users) request.getSession().getAttribute("CURRENT_USER");
+        Users currentUser = (Users) request.getAttribute("currentUser");
 
         if(currentUser!=null) {
 
